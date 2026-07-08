@@ -1,43 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>World Clock - Yevheniia Olinovska</title>
-</head>
-<body>
-  <div class="container">
-  <h1>World Clock</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.1/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>World Clock - Yevheniia Olinovska</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>World Clock</h1>
 
-  <select>
-    <option value="">Select a city...</option>
-    <option value="">London</option>
-    <option value="">New York</option>
-    <option value="">Auckland</option>
-  </select>
+      <select id="city">
+        <option value="">Select a city...</option>
+        <option value="current">My current location</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Pacific/Auckland">Auckland</option>
+      </select>
 
-  <div class="city">
-    <div>
-    <h2>Los Angeles</h2>
-    <div class="date">July 6th 2026</div>
+      <div id="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
     </div>
-    <div class="time">07:41:35 <small> PM </small></div>
-  </div>
-
-  <div class="city">
-    <div>
-    <h2>Sydney</h2>
-    <div class="date">July 6th 2026</div>
-    </div>
-    <div class="time">07:41:35 <small> PM </small> </div>
-  </div>
-
-  </div>
-  <footer>
-    This project was coded by <strong>Yevheniia Olinovska </strong>and is <a href="https://github.com/Evgenia2608/world-clock" target="_blank">open sourced on Github </a>  
-  </footer>
-  <script src="javascript/index.js"></script>
-</body>
+    <footer>
+      This project was coded by <strong>Yevheniia Olinovska </strong>and is
+      <a href="https://github.com/Evgenia2608/world-clock" target="_blank"
+        >open sourced on Github
+      </a>
+    </footer>
+    <script src="javascript/index.js"></script>
+  </body>
 </html>
